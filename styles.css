@@ -1,0 +1,16 @@
+:root {
+    --bois-de-printemps: #F3F0E8;
+    --lin-satine: #E2DDCF;
+    --gris-olive: #A8A08C;
+    --huitre-pale: #958C77;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bois-de-printemps);
+    width:100vw;
+    height:auto;
+}
+
