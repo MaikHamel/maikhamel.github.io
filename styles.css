@@ -37,6 +37,7 @@ body{
     font-family: "Instrument Serif" ;
     font-size: 55px;
     text-align: center;
+    color:var(--gris-olive);
     
 }
 .menu{
@@ -44,27 +45,81 @@ body{
 }
 .menu-projet, .menu-propos, .menu-projet-personnel{
   
-    border: solid
+    border:  3px solid var(--gris-olive);
+    border-left: none;
+    border-right: none;
 
+}
+
+.menu-propos{
+    border-top: none;
 }
 
 
 .text-prenom, .text-nom{
     font-family: "Instrument Serif" ;
-    font-size: 100px;
-    /*
-    position: absolute;
-    bottom:0;
-    */
-    z-index:-1;
+    font-size: 150px;
+    margin-top:10px;
+    line-height: 0.7;
+    color:var(--gris-olive);
 }
 
 /*
-.text-prenom{
-    bottom:120px;
+.nom-background{
+    font-family: "Instrument Serif" ;
+    font-size: 300px;
+    position: absolute;
+    z-index:-1;
+}
+*/
+
+.menu-projet:active{
+  
+    background-color: var(--lin-satine);
+
 }
 
-.text-nom{
-    bottom:10px
+.menu-propos:active{
+  
+    background-color: var(--lin-satine);
+
 }
-    */
+
+.menu-projet-personnel:active{
+  
+    background-color: var(--lin-satine);
+
+}
+
+@media(min-width:870px){
+    .container-menu{
+        width: 100vw;
+        height:100vh;
+        display:grid;
+        grid-template-areas:
+        "b b a a"
+        "b b c c"
+        "b b c c";
+    
+    }
+    .menu{
+        width:60vw;
+        grid-area: a;
+    }
+    .image-menu{
+        width:40vw;
+        grid-area: b;
+        display:flex;
+        justify-content: center;
+    }
+    .nom-menu{
+        width:60vw;
+        grid-area: c;
+    }
+    .text-prenom, .text-nom{
+        
+        font-size: 200px;
+       line-height: 0.7;
+    }
+
+}
