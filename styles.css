@@ -2,29 +2,45 @@
     --bois-de-printemps: #F3F0E8;
     --lin-satine: #E2DDCF;
     --gris-olive: #A8A08C;
+    --gris-olive-pale: #cfc9bc;
     --huitre-pale: #958C77;
 }
+
+/*---------------------------Page Menu---------------------------*/
+
 * {
-    margin:auto;
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
+   
+html, body {
+    min-height: 100vh; 
+    max-height: 100vh; 
+    overflow: hidden;
+}
+    
 
 body{
     background-color: var(--bois-de-printemps);
     width:100vw;
     max-width: 100%;
     display:flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+
     
 }
 
 .container-menu{
+    max-width: 100%;
     width: 100vw;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
+    
 
 }
 
@@ -42,6 +58,10 @@ body{
 }
 .menu{
     width:100vw;
+    
+}
+.menu a{
+    text-decoration: none;
 }
 .menu-projet, .menu-propos, .menu-projet-personnel{
   
@@ -50,9 +70,15 @@ body{
     border-right: none;
 
 }
-
+.menu-projet-personnel{
+    border-top: none;
+}
 .menu-propos{
     border-top: none;
+}
+
+.nom-menu{
+    height:100%;
 }
 
 
@@ -62,7 +88,26 @@ body{
     margin-top:10px;
     line-height: 0.7;
     color:var(--gris-olive);
+    height:auto;
+    margin-bottom: 1px;
 }
+
+.menu p{
+    
+    margin:0;
+}
+
+/*
+@media(max-height:900px){
+    body{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+    */
 
 /*
 .nom-background{
@@ -90,8 +135,22 @@ body{
     background-color: var(--lin-satine);
 
 }
+@media(min-height:1000px){
+    .image-paysage{
+        margin-top:10px;
+        width: 400px;
+        
+    }
+    .text-prenom, .text-nom{
+        font-size:200px;
+        margin-top:10px;
+        line-height: 0.7;
 
-@media(min-width:870px){
+    }
+
+}
+
+@media(min-width:1300px){
     .container-menu{
         width: 100vw;
         height:100vh;
@@ -109,17 +168,178 @@ body{
     .image-menu{
         width:40vw;
         grid-area: b;
+        height:100%;
         display:flex;
         justify-content: center;
+        align-items: center;
+        border-right:3px solid var(--gris-olive);
+    }
+    .image-menu img{
+        height:300px;
+        width:450px;
     }
     .nom-menu{
         width:60vw;
         grid-area: c;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     .text-prenom, .text-nom{
         
-        font-size: 200px;
+        font-size: 230px;
        line-height: 0.7;
+       padding-top: 10px;
+    }
+    .text-prenom{
+        padding-left: 8%;
+    }
+    .text-nom{
+        text-align: end;
+        padding-right:8%;
+    }
+    .text-projet, .text-projet-personnel, .text-propos {
+        text-align: end;
+        padding-right:20px;
+        
+        
+    }
+    .menu-projet:hover{
+  
+        background-color: var(--gris-olive-pale);
+    
+    }
+    
+    .menu-propos:hover{
+      
+        background-color: var(--gris-olive-pale);
+    
+    }
+    
+    .menu-projet-personnel:hover{
+      
+        background-color: var(--gris-olive-pale);
+    
     }
 
+}
+
+@media(min-width:1700px){
+    .text-prenom, .text-nom{
+        
+        font-size: 300px;
+       line-height: 0.7;
+       padding-top: 10px;
+    }
+    .image-menu img{
+        height:400px;
+        width:600px;
+    }
+    
+}
+
+/*---------------------------Page Projet---------------------------*/
+
+.body-projet{
+    min-height: 100vh;
+    overflow-y: auto;
+    display:grid;
+    
+}
+
+.projets{
+    max-width: 100%;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-projet{
+    max-width: 100%;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.container-projet a{
+    text-decoration: none;
+}
+.accueil-bouton{
+    
+    font-family: "Inria Serif";
+    font-style:italic;
+    font-weight: bold;
+    font-size:31px;
+    color:var(--huitre-pale);
+    margin-top:10px;
+    
+}
+.text-projet1, .text-projet2, .text-projet3, .text-projet4{
+    font-family:"Newsreader";
+    font-size: 42px;
+    text-align: center;
+    color:var(--huitre-pale);
+    margin-top: 70px;
+    margin-bottom:10px;
+}
+
+.titre{
+    font-family: "Inria Serif";
+    font-style:italic;
+    font-weight: lighter;
+    font-size:80px;
+    letter-spacing: 5px;
+    color:var(--huitre-pale);
+    margin-bottom:10px;
+
+}
+
+.projet1, .projet2, .projet3, .projet4{
+    border:  3px solid var(--gris-olive);
+    border-left: none;
+    border-right: none;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.projet2, .projet3, .projet4{
+    border-top: none;
+}
+.bouton-debut{
+    
+    border:  3px solid var(--gris-olive);
+    margin:70px;
+    width:300px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-projet1, .image-projet2, .image-projet3, .image-projet4{
+    height:250px;
+    width:420px;
+    margin-bottom: 40px;
+    
+
+}
+.bouton{
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:23px;
+    color:var(--gris-olive);
+    
+    
 }
