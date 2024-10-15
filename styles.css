@@ -378,5 +378,78 @@ body{
 }
 
 @media(min-width:1300px){
+    .body-projet{
+        width:100vw;
+        max-width: 100%;
+        overflow-y: hidden;
+        display:flex;
+       
+    }
+    .container-projet{
+        display:grid;
+        grid-template-areas:
+        "a a c c"
+        "a a b b"
+        "a a b b";
+    }
+    
+
+    .project-titre{
+        grid-area: a;
+        margin-left:5px;
+    }
+
+    .projets{
+        width:70vw;
+        grid-area:b;
+        display:grid;
+       
+        grid-template-columns: auto auto;
+    }
+
+    .accueil-menu{
+        grid-area:c;
+    }
+
+    .bouton-debut{
+        display:none;
+    }
+
+    .projet1, .projet2, .projet3, .projet4{
+        /*
+        width:536px;
+        height:352px;
+        */
+        width:31vw;
+        border:  none;
+    }
+
+    .image-projet1, .image-projet2, .image-projet3, .image-projet4{
+    
+        height:200px;
+        width:380px;
+        margin-bottom: 40px;
+        
+    
+    }
+
+    .titre{
+        writing-mode: tb-rl;
+        font-size:200px ;
+        vertical-align: middle;
+        text-align: center;
+        height:100vh;
+        border-right:  3px solid var(--gris-olive);
+    }
+    .accueil-menu{
+        vertical-align: middle;
+        text-align: center;
+        writing-mode: tb-rl;
+        margin-top: 50px;
+        margin-left:20px;
+        position: absolute;
+    }
+   
+
     
 }
