@@ -410,6 +410,7 @@ body{
 
     .accueil-menu{
         grid-area:c;
+        position: absolute;
     }
 
     .bouton-debut{
@@ -427,9 +428,9 @@ body{
 
     .image-projet1, .image-projet2, .image-projet3, .image-projet4{
     
-        height:200px;
+        height:220px;
         width:380px;
-        margin-bottom: 40px;
+        
         
     
     }
@@ -450,8 +451,18 @@ body{
         margin-left:-50px;
         position: absolute;
     }
+
+    .accueil-bouton{
+        font-size: 2vw;
+    }
     
    
 
     
+}
+
+@media(min-width:1000px){
+   .container-projet{
+    max-height:80%;
+   }
 }
