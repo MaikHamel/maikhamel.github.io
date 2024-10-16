@@ -391,6 +391,7 @@ body{
         "a a c c"
         "a a b b"
         "a a b b";
+        justify-content: space-around;
     }
     
 
@@ -403,8 +404,8 @@ body{
         width:70vw;
         grid-area:b;
         display:grid;
-       
         grid-template-columns: auto auto;
+        
     }
 
     .accueil-menu{
@@ -446,9 +447,10 @@ body{
         text-align: center;
         writing-mode: tb-rl;
         margin-top: 50px;
-        margin-left:20px;
+        margin-left:-50px;
         position: absolute;
     }
+    
    
 
     
