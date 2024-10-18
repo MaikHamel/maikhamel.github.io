@@ -456,7 +456,9 @@ body{
         font-size: 2vw;
     }
     
-   
+   .text-projet1, .text-projet2, .text-projet3, .text-projet4{
+    display: none;
+   }
 
     
 }
