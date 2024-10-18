@@ -531,7 +531,7 @@ body{
    }
 
    #containerhovergradient:hover::before{
-    opacity: 1;
+    opacity: 0.5;
 }
 
 
@@ -539,7 +539,7 @@ body{
 #containerhovergradient::before{
     background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y),
-        var( --gris-olive-fonce),
+        var( --lin-satine),
         transparent 40%
     );
     content:"";
