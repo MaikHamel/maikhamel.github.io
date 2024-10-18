@@ -4,6 +4,9 @@
     --gris-olive: #A8A08C;
     --gris-olive-pale: #cfc9bc;
     --huitre-pale: #958C77;
+    --huitre-foncé: #635e51;
+    --couleur-hover: #5c5545b5;
+    --gris-olive-fonce: #bab39e;
 }
 
 /*---------------------------Page Menu---------------------------*/
@@ -27,8 +30,10 @@ body{
     background-color: var(--bois-de-printemps);
     width:100vw;
     max-width: 100%;
+    
     display:flex;
     align-items: center;
+    
 
     
 }
@@ -275,11 +280,19 @@ body{
     font-family: "Inria Serif";
     font-style:italic;
     font-weight: bold;
-    font-size:31px;
+    font-size:36px;
     color:var(--huitre-pale);
     margin-top:10px;
     
 }
+
+.accueil-bouton:hover{
+    color:var(--huitre-foncé);
+
+}
+
+
+
 .text-projet1, .text-projet2, .text-projet3, .text-projet4{
     font-family:"Newsreader";
     font-size: 42px;
@@ -287,13 +300,14 @@ body{
     color:var(--huitre-pale);
     margin-top: 70px;
     margin-bottom:20px;
+
 }
 
 .titre{
     font-family: "Inria Serif";
     font-style:italic;
     font-weight: lighter;
-    font-size:80px;
+    font-size:85px;
     letter-spacing: 5px;
     color:var(--huitre-pale);
     margin-bottom:10px;
@@ -309,7 +323,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+    z-index:0;
     
     
 }
@@ -328,11 +343,19 @@ body{
     align-items: center;
 }
 
+.bouton-debut:hover{
+    background-color: var(--huitre-pale);
+    .bouton{
+        color:var(--gris-olive-pale);
+    }
+}
+
 .image-projet1, .image-projet2, .image-projet3, .image-projet4{
-    
+    position: relative;
     height:180px;
     width:300px;
     margin-bottom: 40px;
+    
     
 
 }
@@ -391,13 +414,15 @@ body{
         "a a c c"
         "a a b b"
         "a a b b";
-        justify-content: space-around;
+        justify-content: space-between;
     }
     
 
     .project-titre{
         grid-area: a;
-        margin-left:5px;
+        padding-left:5px;
+       
+        height:100vh;
     }
 
     .projets{
@@ -405,6 +430,7 @@ body{
         grid-area:b;
         display:grid;
         grid-template-columns: auto auto;
+        gap: 10px;
         
     }
 
@@ -422,49 +448,241 @@ body{
         width:536px;
         height:352px;
         */
-        width:31vw;
+        /*
+        width:500px;
+        height:300px;
+        */
+        width:35vw;
+        height:23vw;
+        max-width:100%;
         border:  none;
+       
+        
     }
 
     .image-projet1, .image-projet2, .image-projet3, .image-projet4{
-    
+
+        /*
         height:220px;
         width:380px;
+        */
+        position: relative;
+        width:33vw;
+        height:21vw;
+        margin:0;
+        z-index: 1;
         
         
     
     }
+
+    
 
     .titre{
         writing-mode: tb-rl;
         font-size:200px ;
         vertical-align: middle;
         text-align: center;
-        height:100vh;
+        height:100%;
         border-right:  3px solid var(--gris-olive);
     }
     .accueil-menu{
         vertical-align: middle;
         text-align: center;
-        writing-mode: tb-rl;
-        margin-top: 50px;
-        margin-left:-50px;
-        position: absolute;
+        height:50%;
+        width:2px;
+        position:relative;
+        
+        
     }
 
     .accueil-bouton{
         font-size: 2vw;
+        writing-mode: tb-rl;
+        margin-top: 50px;
+        margin-left:-70px;
+        position: absolute;
     }
     
    .text-projet1, .text-projet2, .text-projet3, .text-projet4{
-    display: none;
+    position:absolute;
+    z-index: 2;
+    font-family: "Inria Serif";
+    font-style:italic;
+    font-weight:600;
+    left:0;
+    right:0;
+    font-size: 2.8vw;
+    margin: 0;
+    color:var(--bois-de-printemps);
    }
+   .text-projet1, .text-projet2, .text-projet3, .text-projet4{
+    position:absolute;
+    z-index: 2;
+    font-family: "Inria Serif";
+    font-style:italic;
+    font-weight:600;
+    left:0;
+    right:0;
+    font-size: 2.8vw;
+    margin: 0;
+    color:var(--bois-de-printemps);
+    opacity: 0;
+   }
+
+   #containerhovergradient:hover::before{
+    opacity: 1;
+}
+
+
+
+#containerhovergradient::before{
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        var( --gris-olive-fonce),
+        transparent 40%
+    );
+    content:"";
+    border-radius: inherit;
+    height:100%;
+    left:0px;
+    position: absolute;
+    top:0px;
+    width:100%;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+}
+   
+  
+   
 
     
 }
+
+@media(max-width:1300px){
+    .projet1:active{
+        background-color: var(--lin-satine);
+    }
+    .projet2:active{
+        background-color: var(--lin-satine);
+    }
+    .projet3:active{
+        background-color: var(--lin-satine);
+    }
+    .projet4:active{
+        background-color: var(--lin-satine);
+    }
+    .projet1-container-hover{
+        display:none;
+    }
+    .projet2-container-hover{
+        display:none;
+    }
+    .projet3-container-hover{
+        display:none;
+    }
+    .projet4-container-hover{
+        display:none;
+    }
+   
+
+}
+
+.projet1-container-hover, .projet2-container-hover, .projet3-container-hover, .projet4-container-hover{
+    position: absolute;
+    width:33vw;
+    height:21vw;
+    background-color: var(--couleur-hover);
+    z-index:2;
+    opacity: 0%;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
 
 @media(min-width:1000px){
    .container-projet{
     max-height:80%;
    }
+}
+
+
+.projet1:hover{
+    .projet1-container-hover{ 
+        opacity:100%;
+    }
+    
+    
+}
+.projet2:hover{
+    .projet2-container-hover{ 
+        opacity:100%;
+    }
+    
+    
+}
+.projet3:hover{
+    .projet3-container-hover{ 
+        opacity:100%;
+    }
+    
+    
+}
+.projet4:hover{
+    .projet4-container-hover{ 
+        opacity:100%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+/*
+@media(max-height:1000px ) and (min-width:1300px){
+    .project-titre{
+        height:100%;
+    }
+    .projet1, .projet2, .projet3, .projet4{
+        height:44vh;
+    }
+      .image-projet1, .image-projet2, .image-projet3, .image-projet4{
+
+        
+        height:220px;
+        width:380px;
+        
+        width:35vw;
+        height:21vw;
+        margin:0;
+        
+        
+    
+    }
+}
+*/
+
+@media(min-width:1450px){
+    .accueil-bouton{
+        margin-left: -90px ;
+    }
+}
+
+@media(min-width:1600px){
+    .accueil-bouton{
+        margin-left: -110px ;
+    }
+}
+
+@media(min-width:1800px){
+    .accueil-bouton{
+        margin-left: -130px ;
+    }
 }
