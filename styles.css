@@ -564,6 +564,18 @@ body{
     transition: opacity 0.3s;
     
 }
+.projet1:active{
+    background-color: var(--lin-satine);
+}
+.projet2:active{
+    background-color: var(--lin-satine);
+}
+.projet3:active{
+    background-color: var(--lin-satine);
+}
+.projet4:active{
+    background-color: var(--lin-satine);
+}
    
   
    
