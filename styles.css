@@ -339,7 +339,8 @@ body{
     
     
 }
-    
+
+
     
 .projet2, .projet3, .projet4{
     border-top: none;
@@ -723,6 +724,13 @@ body{
     
 }
 
+.vengeance-main{
+    width:100vw;
+    max-width: 100%;
+    display:flex;
+    flex-direction: column;
+    
+}
 
 .container-vengeance{
     max-width: 100%;
@@ -737,12 +745,12 @@ body{
 .container-vengeance a{
     text-decoration: none;
 }
-.menu-bouton{
+.accueil-bouton{
     
     font-family: "Inria Serif";
     font-style:italic;
     font-weight: bold;
-    font-size:36px;
+    font-size:30px;
     color:var(--huitre-pale);
     margin-top:10px;
     
@@ -755,6 +763,83 @@ body{
 
 
 
+.description-container .description{
+    
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:20px;
+    color:var(--huitre-pale);
+    margin-top:10px;
+    text-align: center;
+
+}
+
+.roles-container .roles-titre{
+    font-family:"Newsreader";
+    font-weight: bold;
+    font-size: 25px;
+    color:var(--huitre-pale);
+
+}
+
+.roles-container .roles{
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:18px;
+    color:var(--huitre-pale);
+    margin-top:none;
+   
+
+}
+
+.roles-container{
+    margin-top:80px;
+    margin-left:10px;
+}
+
+.logiciels-container{
+    margin-top:80px;
+    text-align: right;
+    margin-right:18px;
+}
+
+.logiciels-container .logiciels-titre{
+    font-family:"Newsreader";
+    font-weight: bold;
+    font-size: 25px;
+    color:var(--huitre-pale);
+
+}
+
+.logiciels-container .logiciels{
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:18px;
+    color:var(--huitre-pale);
+    margin-top:none;
+   
+
+}
+
+.vengeance-main a {
+    text-decoration: none;
+}
+.lien-site{
+    text-align: center;
+}
+    
+.lien-site .lien-titre {
+    font-family: "Newsreader";
+    font-weight:600;
+    font-style: italic;
+    font-size:22px;
+    color:var(--huitre-pale);
+    
+}
+
+.lien-site .lien-titre:hover{
+    color:var(--huitre-foncé);
+}
 
 
 
@@ -764,13 +849,38 @@ body{
 .vengeance-titre .titre{
     font-family: "Inria Serif";
     font-style:italic;
-    font-weight: bold;
-    font-size:85px;
+    font-weight: lighter;
+    font-size:60px;
     letter-spacing: 5px;
     color:var(--huitre-pale);
     margin-bottom:10px;
 
 }
+
+.qui-container{
+    margin-top:80px;
+    margin-left:10px;
+
+}
+
+.qui-container .qui-titre{
+    font-family:"Newsreader";
+    font-weight: bold;
+    font-size: 25px;
+    color:var(--huitre-pale);
+
+}
+
+.qui{
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:18px;
+    color:var(--huitre-pale);
+    margin-top:none;
+
+}
+
+
 
 
 
@@ -794,6 +904,8 @@ body{
         color:var(--gris-olive-pale);
     }
 }
+
+
 
 
 .bouton{
