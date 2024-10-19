@@ -564,16 +564,18 @@ body{
     transition: opacity 0.3s;
     
 }
-.projet1:active{
+
+.projets a:nth-child(1){
     background-color: var(--lin-satine);
 }
-.projet2:active{
+
+.projets a:nth-child(2){
     background-color: var(--lin-satine);
 }
-.projet3:active{
+.projets a:nth-child(3){
     background-color: var(--lin-satine);
 }
-.projet4:active{
+.projets a:nth-child(4){
     background-color: var(--lin-satine);
 }
    
