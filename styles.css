@@ -243,7 +243,7 @@ body{
     
 }
 
-/*---------------------------Page Projet---------------------------*/
+/*---------------------------Page Menu Projet---------------------------*/
 
 .body-projet{
     min-height: 100vh;
@@ -532,16 +532,23 @@ body{
     font-family: "Inria Serif";
     font-style:italic;
     font-weight:600;
+    margin: 0;
     left:0;
     right:0;
     font-size: 2.8vw;
-    margin: 0;
     color:var(--bois-de-printemps);
     opacity: 0;
    }
 
    #containerhovergradient:hover::before{
     opacity: 0.5;
+}
+
+#containerhovergradient{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -565,17 +572,17 @@ body{
     
 }
 
-.projets a:nth-child(1){
+.projets a:nth-child(1):active{
     background-color: var(--lin-satine);
 }
 
-.projets a:nth-child(2){
+.projets a:nth-child(2):active{
     background-color: var(--lin-satine);
 }
-.projets a:nth-child(3){
+.projets a:nth-child(3):active{
     background-color: var(--lin-satine);
 }
-.projets a:nth-child(4){
+.projets a:nth-child(4):active{
     background-color: var(--lin-satine);
 }
    
@@ -637,12 +644,20 @@ body{
     .projet1-container-hover{ 
         opacity:100%;
     }
+    .text-projet1{
+        opacity: 100%;
+        transition: opacity 0.3s;
+    }
     
     
 }
 .projet2:hover{
     .projet2-container-hover{ 
         opacity:100%;
+    }
+    .text-projet2{
+        opacity: 100%;
+        transition: opacity 0.3s;
     }
     
     
@@ -651,12 +666,20 @@ body{
     .projet3-container-hover{ 
         opacity:100%;
     }
+    .text-projet3{
+        opacity: 100%;
+        transition: opacity 0.3s;
+    }
     
     
 }
 .projet4:hover{
     .projet4-container-hover{ 
         opacity:100%;
+    }
+    .text-projet4{
+        opacity: 100%;
+        transition: opacity 0.3s;
     }
     
     
@@ -672,33 +695,226 @@ body{
 
 
 
-
-
-
-
-/*
-@media(max-height:1000px ) and (min-width:1300px){
-    .project-titre{
-        height:100%;
-    }
-    .projet1, .projet2, .projet3, .projet4{
-        height:44vh;
-    }
-      .image-projet1, .image-projet2, .image-projet3, .image-projet4{
-
-        
-        height:220px;
-        width:380px;
-        
-        width:35vw;
-        height:21vw;
-        margin:0;
-        
-        
-    
+@media(min-width:1450px){
+    .accueil-bouton{
+        margin-left: -90px ;
     }
 }
-*/
+
+@media(min-width:1600px){
+    .accueil-bouton{
+        margin-left: -110px ;
+    }
+}
+
+@media(min-width:1800px){
+    .accueil-bouton{
+        margin-left: -130px ;
+    }
+}
+
+/*---------------------------Page Projet Vengeance ---------------------------*/
+
+
+.body-vengeance{
+    min-height: 100vh;
+    overflow-y: auto;
+    display:grid;
+    
+}
+
+
+.container-vengeance{
+    max-width: 100%;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.container-vengeance a{
+    text-decoration: none;
+}
+.menu-bouton{
+    
+    font-family: "Inria Serif";
+    font-style:italic;
+    font-weight: bold;
+    font-size:36px;
+    color:var(--huitre-pale);
+    margin-top:10px;
+    
+}
+
+.menu-bouton:hover{
+    color:var(--huitre-foncé);
+
+}
+
+
+
+
+
+
+
+
+
+.vengeance-titre .titre{
+    font-family: "Inria Serif";
+    font-style:italic;
+    font-weight: bold;
+    font-size:85px;
+    letter-spacing: 5px;
+    color:var(--huitre-pale);
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+.bouton-debut{
+    
+    border:  3px solid var(--gris-olive);
+    margin:70px;
+    width:300px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bouton-debut:hover{
+    background-color: var(--huitre-pale);
+    .bouton{
+        color:var(--gris-olive-pale);
+    }
+}
+
+
+.bouton{
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:23px;
+    color:var(--gris-olive);
+    
+    
+}
+
+
+
+
+@media(min-width:1300px){
+    .body-vengeance{
+        width:100vw;
+        max-width: 100%;
+        overflow-y: hidden;
+        display:flex;
+       
+    }
+    .container-vengeance{
+        display:grid;
+        grid-template-areas:
+        "a a c c"
+        "a a b b"
+        "a a b b";
+        justify-content: space-between;
+    }
+    
+
+    .vengeance-titre{
+        grid-area: a;
+        padding-left:5px;
+       
+        height:100vh;
+    }
+
+    .vengeance-main{
+        width:70vw;
+        grid-area:b;
+        display:grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        
+    }
+
+    .accueil-menu{
+        grid-area:c;
+        position: absolute;
+    }
+
+    .bouton-debut{
+        display:none;
+    }
+
+
+    
+
+  
+
+    
+
+    .vengeance-titre .titre{
+        writing-mode: tb-rl;
+        font-size:200px ;
+        vertical-align: middle;
+        text-align: center;
+        height:100%;
+        border-right:  3px solid var(--gris-olive);
+    }
+    .accueil-menu{
+        vertical-align: middle;
+        text-align: center;
+        height:50%;
+        width:2px;
+        position:relative;
+        
+        
+    }
+
+    .accueil-bouton{
+        font-size: 2vw;
+        writing-mode: tb-rl;
+        margin-top: 50px;
+        margin-left:-70px;
+        position: absolute;
+    }
+    
+  
+
+ 
+
+
+
+
+
+
+
+
+   
+  
+   
+
+    
+}
+
+
+
+
+
+
+@media(min-width:1000px){
+   .container-vengeance{
+    max-height:80%;
+   }
+}
+
+
+
 
 @media(min-width:1450px){
     .accueil-bouton{
