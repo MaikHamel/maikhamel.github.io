@@ -15,3 +15,10 @@ const handleOnMouseMove = e => {
 for(const containerhover of document.querySelectorAll('[id=containerhovergradient]') ){
     containerhover.onmousemove = e => handleOnMouseMove(e);
 }
+
+
+
+
+
+
+
