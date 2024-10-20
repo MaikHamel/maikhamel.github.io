@@ -7,6 +7,7 @@
     --huitre-foncé: #635e51;
     --couleur-hover: #5c5545b5;
     --gris-olive-fonce: #bab39e;
+    --swiper-theme-color: #8a8473;
 }
 
 /*---------------------------Page Menu---------------------------*/
@@ -16,8 +17,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--huitre-foncé);
+    border-radius: 10px;
+  }
+
    
 html, body {
     min-height: 100vh; 
@@ -821,11 +832,16 @@ body{
 
 }
 
+.container-vengeance a {
+    margin:0;
+}
+
 .vengeance-main a {
     text-decoration: none;
 }
 .lien-site{
     text-align: center;
+    margin: 30px;
 }
     
 .lien-site .lien-titre {
@@ -835,6 +851,10 @@ body{
     font-size:22px;
     color:var(--huitre-pale);
     
+}
+
+.description-container{
+    margin-top:50px;
 }
 
 .lien-site .lien-titre:hover{
@@ -855,20 +875,41 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
     
 }
+
+
 .image-projet-1{
     width: 100vw;
     max-width: 100%;
     background-color: red;
 }
 
-.image-projet-1 img{
+.swiper-slide img{
     width:350px;
     height:180px;
 
 }
 
+carousel-container{
+    max-width:100%;
+    width:100vw;
+    
+
+}
+
+
+
+.swiper-button-prev{
+margin-left:20px;
+font-weight: 600;
+}
+
+.swiper-button-next{
+    margin-right:20px;
+    font-weight: 600;
+}
 
 
 
@@ -877,10 +918,11 @@ body{
     font-family: "Inria Serif";
     font-style:italic;
     font-weight: lighter;
-    font-size:60px;
+    font-size:65px;
     letter-spacing: 5px;
     color:var(--huitre-pale);
-    margin-bottom:10px;
+    
+    
 
 }
 
@@ -942,6 +984,34 @@ body{
     color:var(--gris-olive);
     
     
+}
+
+@media(min-width:600px){
+    .roles-container{
+        text-align: center;
+    }
+
+    .logiciels-container{
+        text-align: center;
+    }
+
+    .qui-container{
+        text-align: center;
+    }
+    .description-container{
+        margin-left:5px;
+        margin-right:5px;
+    }
+    .description-container .description{
+        font-size: 22px;
+    }
+    .roles-container .roles-titre, .logiciels-container .logiciels-titre, .qui-container .qui-titre{
+        font-size: 28px;
+    }
+    .roles-container .roles, .logiciels-container .logiciels, .qui-container .qui{
+        font-size: 20px;
+    }
+
 }
 
 
