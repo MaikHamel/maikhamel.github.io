@@ -7,6 +7,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+        href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css />
+        
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="body-vengeance">
@@ -30,26 +33,46 @@
 
 
 
-               <div class="carousel-container" id="carousel">
-                    <div class="slide">
-                        <div class="slide-content">
-                            <img src="" alt="">
+               <div class="div-carousel">
+                    <div class="carousel-container" id="carousel">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="image-projet-1">
+                                    <img src="medias/vegeance/image_vengeance_menu.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-projet-1">
+                                    <img src="medias/vegeance/image_vengeance_jeu1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-projet-1">
+                                    <img src="medias/vegeance/image_vengeance_jeu2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-projet-1">
+                                    <img src="medias/vegeance/image_vengeance_jeu3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-projet-1">
+                                    <img src="medias/vegeance/image_vengeance_jeu4.png" alt="">
+                                </div>
+                            </div>
+                            
                         </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <img src="" alt="">
-                        </div>
+                        <!-- If we need pagination -->
+                        
+                        
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        
+                        <!-- If we need scrollbar -->
+                       
                     </div>
                </div>
 
@@ -94,5 +117,7 @@
         </div>
         
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
     <script src="script.js"></script>
 </html>

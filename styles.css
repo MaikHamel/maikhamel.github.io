@@ -841,6 +841,33 @@ body{
     color:var(--huitre-foncé);
 }
 
+.div-carousel{
+    position: relative;
+    max-width:100%;
+    width:100vw;
+}
+
+
+.swiper-slide{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image-projet-1{
+    width: 100vw;
+    max-width: 100%;
+    background-color: red;
+}
+
+.image-projet-1 img{
+    width:350px;
+    height:180px;
+
+}
 
 
 
