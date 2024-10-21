@@ -883,8 +883,8 @@ body{
 
 
 .swiper-slide img{
-    width:350px;
-    height:180px;
+    width:80vw;
+    height:35vh;
 
 }
 
@@ -979,6 +979,7 @@ font-weight: 600;
     display:flex;
     flex-direction: column;
     align-items: stretch;
+    margin-top: 20px;
 }
 
 
@@ -1031,7 +1032,38 @@ font-weight: 600;
         height:300px;
     
     }
+    
 
+}
+
+@media(min-width:800px){
+    .swiper-slide img{
+        width:780px;
+        height:420px;
+    
+    }
+}
+
+@media(min-width:900px){
+
+    .swiper-button-prev{
+        margin-left:250px;
+        font-weight: 600;
+    }
+
+    .swiper-button-next{
+        margin-right:250px;
+        font-weight: 600;
+    }
+
+    .swiper-slide img{
+        width:780px;
+        height:420px;
+    
+    }
+
+        
+        
 }
 
 
@@ -1048,37 +1080,102 @@ font-weight: 600;
     .container-vengeance{
         display:grid;
         grid-template-areas:
-        "a a c c"
+        "a a c c "
         "a a b b"
         "a a b b";
         justify-content: space-between;
+    }
+
+    .description-container{
+        margin-top:30px;
     }
     
 
     .vengeance-titre{
         grid-area: a;
         padding-left:5px;
-       
         height:100vh;
     }
+
+    .container-information{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:40px;
+        margin-bottom:3px;
+    }
+
+    .roles-container{
+        margin:0;
+    }
+    .logiciels-container{
+        margin:0;
+    }
+    .qui-container{
+        margin:0;
+    }
+    
 
     .vengeance-main{
         width:70vw;
         grid-area:b;
-        display:grid;
-        grid-template-columns: auto auto;
-        gap: 10px;
+        
         
     }
+
+    .swiper-slide img{
+        
+        width:780px;
+        height:420px;
+        
+    
+    }
+
+
+    .swiper-slide{
+        width:100vw;
+        max-width:100%;
+    }
+
+    .carousel-container{
+        overflow: hidden;
+    }
+
+    .lien-site{
+        left:20%;
+    }
+   
+   
 
     .accueil-menu{
         grid-area:c;
         position: absolute;
     }
 
+    .container-bouton-swiper{
+        position:absolute;
+        top:40%;
+        width:100vw;
+    }
+
+
+
     .bouton-debut{
         display:none;
     }
+
+    .swiper-button-prev{
+        margin-left:50px;
+        font-weight: 600;
+    }
+
+    .swiper-button-next{
+        margin-right:50px;
+        font-weight: 600;
+    }
+
+    
 
 
     
@@ -1089,7 +1186,7 @@ font-weight: 600;
 
     .vengeance-titre .titre{
         writing-mode: tb-rl;
-        font-size:200px ;
+        font-size:120px ;
         vertical-align: middle;
         text-align: center;
         height:100%;
@@ -1109,27 +1206,15 @@ font-weight: 600;
         font-size: 2vw;
         writing-mode: tb-rl;
         margin-top: 50px;
-        margin-left:-70px;
+        margin-left:-130px;
         position: absolute;
     }
     
   
 
- 
-
-
-
-
-
-
-
-
-   
-  
-   
-
     
 }
+
 
 
 
@@ -1153,7 +1238,7 @@ font-weight: 600;
 
 @media(min-width:1600px){
     .accueil-bouton{
-        margin-left: -110px ;
+        margin-left: -100px ;
     }
 }
 
