@@ -1207,7 +1207,6 @@ font-weight: 600;
         font-size: 2vw;
         writing-mode: tb-rl;
         margin-top: 50px;
-        margin-left:-125x;
         position: absolute;
     }
     
@@ -1215,8 +1214,6 @@ font-weight: 600;
 
     
 }
-
-
 
 
 
@@ -1254,15 +1251,15 @@ font-weight: 600;
 }
 
 @media(min-width: 1400px) and (min-height:900px){
-    .vengeance-main{
-        width:80vw;
+   
+    .container-bouton-swiper{
+        width:90vw;
     }
     .swiper-slide img{
-        max-width:100%;
-        max-height:100%;
-        width:980px;
-        height:600px;
+        width:880px;
+        height:500px;
     }
+   
 }
 
 @media(min-width:2000px) and(min-height:1000px){
@@ -1274,4 +1271,14 @@ font-weight: 600;
 
     }
 
+}
+
+@media(min-width:1900px) and (min-height:1050px){
+    .swiper-slide img {
+        max-width:100%;
+        max-height:100%;
+        width:1200px;
+        height:650px;
+
+    }
 }
