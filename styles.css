@@ -1252,3 +1252,15 @@ font-weight: 600;
         margin-left: -180px ;
     }
 }
+
+@media(min-width: 1500px) and (min-height:900px){
+    .vengeance-main{
+        width:80vw;
+    }
+    .swiper-slide img{
+        max-width:100%;
+        max-height:100%;
+        width:60vw;
+        height:60vh;
+    }
+}
