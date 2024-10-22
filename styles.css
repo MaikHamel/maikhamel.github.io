@@ -1144,7 +1144,11 @@ font-weight: 600;
 
     .lien-site{
         left:20%;
-        margin-left: -700px;
+        margin-left: -650px;
+    }
+
+    .lien-site .lien-titre {
+        font-size:1.8vw;
     }
    
    
@@ -1216,6 +1220,31 @@ font-weight: 600;
 }
 
 
+@media(min-width:1500px){
+    .lien-site{
+        margin-left: -720px;
+    }
+}
+
+@media(min-width:1700px){
+    .lien-site{
+        margin-left: -820px;
+    }
+}
+
+@media(min-width:1900px){
+    .lien-site{
+        margin-left: -920px;
+    }
+}
+
+@media(min-width:2100px){
+    .lien-site{
+        margin-left: -1020px;
+    }
+}
+    
+
 
 
 
@@ -1283,9 +1312,10 @@ font-weight: 600;
     }
 }
 
-
-@media(max-width:1500px) and(min-width:1300px){
-    .div-carousel{
-        width:1000px;
+/*
+@media(min-width:1400px) and(max-width:1500px){
+    .vengeance-titre .titre{
+        background-color: aqua;
     }
 }
+*/
