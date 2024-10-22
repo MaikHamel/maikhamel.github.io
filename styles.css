@@ -1012,7 +1012,7 @@ font-weight: 600;
         align-self: center;
     }
     .description-container .description{
-        font-size: 22px;
+        font-size: 19px;
     }
     .roles-container .roles-titre, .logiciels-container .logiciels-titre, .qui-container .qui-titre{
         font-size: 28px;
@@ -1105,6 +1105,8 @@ font-weight: 600;
         margin-top:40px;
         margin-bottom:3px;
     }
+
+
 
     .roles-container{
         margin:0;
