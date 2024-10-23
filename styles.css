@@ -882,7 +882,7 @@ body{
 }
 
 
-.swiper-slide img{
+.swiper-slide img, .video{
     width:450px;
     height:250px;
 
@@ -1027,7 +1027,7 @@ font-weight: 600;
         font-size: 25px;
     }
 
-    .swiper-slide img{
+    .swiper-slide img, .video{
         width:570px;
         height:300px;
     
@@ -1037,7 +1037,7 @@ font-weight: 600;
 }
 
 @media(min-width:800px){
-    .swiper-slide img{
+    .swiper-slide img, .video{
         width:780px;
         height:420px;
     
@@ -1056,7 +1056,7 @@ font-weight: 600;
         font-weight: 600;
     }
 
-    .swiper-slide img{
+    .swiper-slide img, .video{
         width:780px;
         height:420px;
     
@@ -1126,7 +1126,7 @@ font-weight: 600;
         
     }
 
-    .swiper-slide img{
+    .swiper-slide img, .video{
         
         width:780px;
         height:420px;
@@ -1286,7 +1286,7 @@ font-weight: 600;
     .container-bouton-swiper{
         width:90vw;
     }
-    .swiper-slide img{
+    .swiper-slide img, .video{
         width:880px;
         height:500px;
     }
@@ -1294,7 +1294,7 @@ font-weight: 600;
 }
 
 @media(min-width:2000px) and(min-height:1000px){
-    .swiper-slide img {
+    .swiper-slide img, .video {
         max-width:100%;
         max-height:100%;
         width:1300px;
@@ -1305,7 +1305,7 @@ font-weight: 600;
 }
 
 @media(min-width:1900px) and (min-height:1050px){
-    .swiper-slide img {
+    .swiper-slide img, .video {
         max-width:100%;
         max-height:100%;
         width:1200px;
