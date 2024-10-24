@@ -1320,3 +1320,51 @@ font-weight: 600;
     }
 }
 */
+
+/*-----------------------------------------section projets personnels----------------------------------------*/
+
+
+.swiper-slide .image-art1{
+    width: 330px;
+    height:400px;
+}
+.swiper-slide .image-art2{
+    width: 400px;
+    height:250px;
+}
+
+.swiper-slide .image-art3{
+    width: 290px;
+    height:430px;
+}
+.swiper-slide .image-art4{
+    width: 310px;
+    height:420px;
+}
+.swiper-slide .image-art5{
+    width: 310px;
+    height:420px;
+}
+
+@media(min-width:1400px){
+    .swiper-slide .image-art1{
+        width: 500px;
+        height:600px;
+    }
+    .swiper-slide .image-art2{
+        width: 800px;
+        height:450px;
+    }
+    .swiper-slide .image-art3{
+        width: 410px;
+        height:630px;
+    }
+    .swiper-slide .image-art4{
+        width: 460px;
+        height:620px;
+    }
+    .swiper-slide .image-art5{
+        width: 460px;
+        height:620px;
+    }
+}
