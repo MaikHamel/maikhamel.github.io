@@ -1371,3 +1371,126 @@ font-weight: 600;
 
 
 /*-----------------------------------------section page à propos ----------------------------------------*/
+
+.presentation {
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:20px;
+    color:var(--huitre-pale);
+    text-align: left;
+    margin-bottom:50px;
+    margin-left: 10px ;
+    margin-right:10px;
+}
+
+.info-personnel{
+    font-family: "Inria Serif";
+    font-weight: bold;
+    font-size:20px;
+    color:var(--huitre-pale);
+    text-align: left;
+    margin-left: 10px ;
+    margin-bottom: 50px;
+
+
+}
+
+.icon{
+    
+    width:200px;
+    background-color: #A8A08C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+
+
+.icon img {
+    margin: 25px;
+    width:80%;
+}
+.css{
+    width:59% !important;
+}
+.Csharp{
+    width: 100% !important;
+}
+
+
+
+.container-icons-competence{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+    justify-content: center;
+    
+    /*
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+.photo{
+    width:100vw;
+    max-width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:50px;
+    
+}
+
+.photo img {
+    border-radius: 10px;
+    width:300px;
+}
+
+@media(min-width:600px){
+    .presentation{
+        text-align: center;
+    }
+    .info-personnel{
+        text-align: center;
+    }
+}
+
+@media(min-width:800px){
+    .container-icons-competence{
+        grid-template-columns: auto auto auto auto;
+        gap:20px;
+    }
+    .icon{
+        width:150px;
+    }
+}
+
+@media(min-width:1400px){
+    .container-icons-competence{
+        /*
+        display:flex;
+        flex-direction: row;
+        */
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        overflow: hidden;
+    }
+    .icon{
+        width:100px;
+        height:100px;
+    }
+    icon img {
+        width:20px !important;
+    }
+    .photo img {
+        width:220px;
+    }
+    
+
+}
