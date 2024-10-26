@@ -1381,6 +1381,7 @@ font-weight: 600;
     margin-bottom:50px;
     margin-left: 10px ;
     margin-right:10px;
+    text-align: center;
 }
 
 .info-personnel{
@@ -1391,6 +1392,9 @@ font-weight: 600;
     text-align: left;
     margin-left: 10px ;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
 }
@@ -1405,6 +1409,22 @@ font-weight: 600;
     border-radius: 10px;
     
 }
+.icon-info{
+    width:50vw;
+    max-width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon-info i {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
 
 
 
@@ -1472,25 +1492,55 @@ font-weight: 600;
     }
 }
 
-@media(min-width:1400px){
+@media(min-width:1300px) and (max-width:1500px){
+    .icon{
+        width:50px;
+        height:50px;
+        background-color: aqua;
+    }
+
+}
+
+@media(min-width:1300px){
     .container-icons-competence{
         /*
         display:flex;
         flex-direction: row;
         */
+        /*
         grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
         overflow: hidden;
-    }
-    .icon{
-        width:100px;
-        height:100px;
-    }
-    icon img {
-        width:20px !important;
-    }
-    .photo img {
-        width:220px;
+        */
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        
+        gap:20px;
     }
     
+    
+    .photo img {
+        width:240px;
+    }
+    .figma {
+        width:50% !important;
+    }
+    
+
+}
+@media(min-width:1500px){
+    .icon {
+        width:60px;
+        height:60px;
+    }
+
+}
+
+@media(min-width:1900px) and (min-height: 900px){
+    .photo img {
+        width:400px;
+    }
+    .icon{
+        width:80px;
+        height:80px;
+    }
 
 }
