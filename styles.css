@@ -240,6 +240,12 @@ body{
 
 }
 
+@media(max-height:600px){
+    .text-nom, .text-prenom{
+        font-size: 100px;
+    }
+}
+
 @media(min-width:1700px){
     .text-prenom, .text-nom{
         
@@ -1469,7 +1475,10 @@ font-weight: 600;
 }
 
 .icon-info a{
+    color: black;
+    /*
     text-decoration: none !important;
+    */
 }
 
 .photo img {
