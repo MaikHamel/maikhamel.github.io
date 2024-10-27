@@ -12,7 +12,7 @@
 
 .backgroundmatter{
     position: absolute;
-    z-index: -4;
+    z-index: -3;
     width:100vw;
     height:100vh;
     max-width: 100%;
@@ -50,7 +50,6 @@ body{
     background-color: var(--bois-de-printemps);
     width:100vw;
     max-width: 100%;
-
     display:flex;
     align-items: center;
     

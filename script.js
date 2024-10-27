@@ -56,7 +56,7 @@ const swiper = new Swiper('.carousel-container', {
             width:backgroundgravity.clientWidth,
             height:backgroundgravity.clientHeight,
             background: "transparent",
-            wireframes: true,
+            
           }
       });
 
