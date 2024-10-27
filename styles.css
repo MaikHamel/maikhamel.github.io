@@ -1468,6 +1468,10 @@ font-weight: 600;
     
 }
 
+.icon-info a{
+    text-decoration-line: none;
+}
+
 .photo img {
     border-radius: 10px;
     width:300px;
