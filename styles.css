@@ -175,7 +175,7 @@ body{
 
 }
 
-@media(min-width:1300px){
+@media(min-width:1200px){
     .container-menu{
         width: 100vw;
         height:100vh;
@@ -450,7 +450,7 @@ body{
 
 
 
-@media(min-width:1300px){
+@media(min-width:1200px){
     .body-projet{
         width:100vw;
         max-width: 100%;
@@ -1086,7 +1086,7 @@ font-weight: 600;
 
 
 
-@media(min-width:1300px){
+@media(min-width:1200px){
     .body-vengeance{
         width:100vw;
         max-width: 100%;
