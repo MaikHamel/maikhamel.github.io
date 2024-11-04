@@ -175,7 +175,14 @@ body{
 
 }
 
-@media(min-width:1100px){
+@media(min-width:1000px) and (max-width:1100px){
+    .image-menu img {
+        height:250px !important;
+        width:360px !important;
+    }
+}
+
+@media(min-width:1000px){
     .container-menu{
         width: 100vw;
         height:100vh;
